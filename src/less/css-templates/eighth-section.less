@@ -1,0 +1,49 @@
+.section_eighth {
+  min-height: 0;
+  height: auto;
+  padding: 110px 0 65px;
+  @media @tablet{
+    padding: 70px 0 80px;
+  }
+  @media @mobile{
+    padding: 50px 0;
+  }
+}
+
+.platforms-block{
+  .platform-head{
+    .title{
+      font-family: @PN_B;
+      color: @black;
+      font-size: 36px;
+      text-transform: uppercase;
+    }
+  }
+  .platform-items{
+    margin-top: 25px;
+    margin-bottom: 80px;
+    @media @mobile{
+      margin: 0;
+    }
+    .item{
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 55px;
+      @media @mobile{
+        margin-top: 50px;
+      }
+      .icon{
+        font-size: 45px;
+        color: @yellow;
+      }
+      .platform-name{
+        font-family: @PN_B;
+        color: @black;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-left: 25px;
+      }
+    }
+  }
+}

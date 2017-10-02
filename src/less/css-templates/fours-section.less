@@ -1,0 +1,178 @@
+.section_fours {
+  min-height: 100%;
+  padding-bottom: 45px;
+  border-bottom: 10px solid @yellow;
+  @media @tablet, @mobile{
+    padding-bottom: 0;
+  }
+}
+
+.trade-block {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  padding: 160px 0;
+  @media @tablet {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+  @media @mobile{
+    padding-top: 45px;
+    padding-bottom: 50px;
+  }
+  &:after {
+    content: '';
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: url('../img/bg/bg-fours-section.jpg') no-repeat right top;
+  }
+  .container, .row, [class^="col-"], [class*="col-"] {
+    @media only screen and (min-width: 1200px) {
+      position: static;
+    }
+  }
+  .container{
+    @media @mobile{
+      width: auto;
+    }
+  }
+  .trade-info {
+    @media @tablet, @mobile {
+      position: relative;
+    }
+    .title-sub-icon {
+      font-size: 47px;
+      i.icon {
+        right: 0;
+        left: auto;
+      }
+    }
+  }
+  .info-head {
+    @media @tablet, @mobile {
+      position: absolute;
+      top: 80px;
+      left: 0;
+    }
+    @media @mobile{
+      top: 35px;
+    }
+    @media only screen and (max-width: 400px){
+      top: 0;
+    }
+  }
+  .info-bg-wrapper{
+    overflow: hidden;
+    @media @tablet, @mobile{
+      margin: 0 -15px;
+    }
+    @media only screen and (min-width: 1200px) {
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: -1;
+    }
+  }
+  .info-bg {
+    @media @mobile{
+      margin-right: -55px;
+    }
+    @media only screen and (max-width: 400px){
+      margin-right: -105px;
+    }
+    img {
+      display: block;
+      @media @tablet, @mobile {
+        max-width: 100%;
+      }
+    }
+  }
+  .info-content {
+    margin-top: 55px;
+    @media @tablet, @mobile{
+      margin-top: 0;
+    }
+    h3 {
+      font-size: 20px;
+      color: @black;
+      font-family: @PN_B;
+      margin: 0;
+      @media @tablet{
+        margin-top: 10px;
+      }
+    }
+    .text {
+      margin-top: 55px;
+      @media @tablet{
+        margin-top: 30px;
+      }
+      @media @mobile{
+        margin-top: 35px;
+      }
+    }
+    p {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+      line-height: 22px;
+      color: @gray;
+      font-family: @PN_R;
+    }
+  }
+  .info-buttons {
+    margin-top: 130px;
+    @media @tablet{
+      margin-top: 55px;
+      text-align: center;
+    }
+    @media @mobile{
+      margin-top: 40px;
+      text-align: center;
+    }
+    .button-with-note {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 65px;
+      @media @tablet{
+        margin: 0 15px;
+      }
+      @media @mobile{
+        display: block;
+        margin-bottom: 25px;
+        margin-right: 0;
+      }
+      &:nth-child(2) {
+        .btn {
+          margin-left: 10px;
+          @media @tablet, @mobile{
+            margin-left: 0;
+          }
+        }
+      }
+      .note {
+        padding-top: 18px;
+        color: @gray;
+        font-size: 12px;
+      }
+    }
+    .btn {
+      display: inline-block;
+      text-transform: uppercase;
+      width: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      @media @tablet{
+        min-width: 270px;
+      }
+      @media @mobile{
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

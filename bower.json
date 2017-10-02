@@ -1,0 +1,31 @@
+{
+  "name": "frontend",
+  "description": "Frontend project.",
+  "main": "gulpfile.js",
+  "authors": [
+    "Eugene Derysh"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "frontend",
+    "html",
+    "css",
+    "less",
+    "javascript",
+    "babel"
+  ],
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "normalize.less": "^1.0.0",
+    "slick-carousel": "^1.8.0",
+    "matchHeight": "^0.7.2"
+  }
+}

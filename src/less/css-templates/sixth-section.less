@@ -1,0 +1,66 @@
+.section_sixth {
+  padding: 110px 0 65px;
+  @media @tablet {
+    padding: 10px 0 50px;
+  }
+  @media @mobile{
+    padding: 60px 0 0;
+  }
+  .icons-block {
+    @media @tablet {
+      overflow: hidden;
+    }
+  }
+  .icons-items {
+    @media @tablet {
+      margin: 0 -30px;
+    }
+    .item {
+      text-align: center;
+      @media @tablet {
+        padding-top: 50px;
+        padding-left: 45px;
+        padding-right: 45px;
+      }
+      @media @mobile {
+        padding-top: 35px;
+        padding-bottom: 15px;
+      }
+      @media only screen and (min-width: 400px) and (max-width: 767px){
+        width: 50%;
+      }
+      &.col-md-3 {
+        padding-left: 45px;
+        padding-right: 45px;
+        @media only screen and (min-width: 400px) and (max-width: 767px){
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+    }
+    .icon {
+      color: @yellow;
+      margin-bottom: 80px;
+      font-size: 50px;
+    }
+    .name {
+      font-size: 14px;
+      text-transform: uppercase;
+      font-family: @PN_B;
+      color: @black;
+    }
+    .text {
+      margin-top: 35px;
+      font-size: 16px;
+      line-height: 20px;
+      font-family: @PN_R;
+      color: @gray;
+      @media @tablet{
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+

@@ -1,0 +1,223 @@
+.section_second {
+
+}
+
+.cards-block {
+  @media @tablet, @mobile {
+    margin-top: -25px;
+  }
+  .card-item-wrapper {
+    position: relative;
+    height: 580px;
+    margin-bottom: 50px;
+    @media @mobile {
+      margin-bottom: 37px;
+    }
+    &:nth-child(3n+2) {
+      top: -50px;
+      @media @tablet, @mobile {
+        top: auto;
+      }
+    }
+  }
+  .card-item {
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    border-radius: 2px;
+    box-shadow: 0 10px 30px 0 transparent;
+    transition: all .3s ease-in;
+    &:after {
+      position: absolute;
+      top: 0;
+      left: 0;
+      content: '';
+      width: 100%;
+      height: 100%;
+      transition: all .3s ease-in;
+      border: 4px solid transparent;
+    }
+    &:hover, .hover {
+      box-shadow: 0 10px 30px 0 rgba(255, 205, 0, 0.5);
+      &:after {
+        border: 4px solid @yellow;
+      }
+      .item-head {
+        position: relative;
+        opacity: 0;
+        transition: opacity 0s 0s;
+      }
+      .item-hover {
+        transform: translateY(0);
+      }
+    }
+  }
+  .item-hover {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    right: 4px;
+    transform: translateY(-200%);
+    padding: 40px 37px 25px;
+    transition: all 0.5s;
+
+    .hover-title {
+      position: relative;
+      font-size: 22px;
+      font-family: @PN_B;
+      color: @black;
+      margin: 0;
+      text-transform: uppercase;
+    }
+    .hover-text {
+      margin-top: 25px;
+      font-size: 16px;
+      line-height: 28px;
+      font-family: @PN_R;
+      color: @gray;
+    }
+    .hover-list {
+      margin-top: 40px;
+      li {
+        position: relative;
+        color: @main;
+        font-size: 14px;
+        font-family: @PN_R;
+        margin-bottom: 25px;
+        &:after {
+          position: absolute;
+          top: 2px;
+          left: -17px;
+          content: '\e90f';
+          font-family: 'icomoon';
+          font-size: 10px;
+          color: @yellow;
+        }
+      }
+    }
+  }
+  .item-head {
+    padding: 40px 40px 60px;
+    transition: opacity 1s 0.3s;
+    .head-title {
+      position: relative;
+      font-size: 26px;
+      font-family: @PN_B;
+      color: @black;
+      margin: 0;
+      text-transform: uppercase;
+      &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 17px 0 17px 24px;
+        border-color: transparent transparent transparent #ffc933;
+        position: absolute;
+        top: -5px;
+        left: -40px;
+      }
+    }
+    .head-text {
+      margin-top: 25px;
+      font-size: 16px;
+      line-height: 28px;
+      font-family: @PN_R;
+      color: @gray;
+    }
+  }
+  .item-content {
+    width: 100%;
+    overflow: hidden;
+    height: ~'calc(100% - 190px)';
+    position: relative;
+    transition: all 0.5s;
+    .card-img {
+      position: relative;
+      img {
+        position: absolute;
+        top: 0;
+        display: block;
+      }
+    }
+    .card-img_left {
+      img {
+        right: -23%;
+      }
+    }
+    .card-img_center {
+      img {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .card-img_right {
+      img {
+        left: -26%;
+      }
+    }
+  }
+  .item-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    @media only screen and (max-width: 400px) {
+      padding: 0 10px;
+    }
+    .btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 150px;
+      margin: 0;
+      text-transform: uppercase;
+      @media only screen and (max-width: 400px) {
+        width: 130px;
+        height: 50px;
+        font-size: 11px;
+      }
+      &.w100p {
+        width: 100%;
+        @media @tablet,@mobile {
+          width: 100%;
+        }
+      }
+      [class^="svg-"], [class*=" svg-"] {
+        font-size: 16px;
+        padding-right: 10px;
+        @media only screen and (max-width: 400px) {
+          padding-right: 7px;
+          font-size: 13px;
+        }
+      }
+      .svg-icon-download {
+        font-size: 21px;
+        @media only screen and (max-width: 400px) {
+          font-size: 18px;
+        }
+      }
+      .svg-icon-apple-fill {
+        font-size: 18px;
+        padding-bottom: 4px;
+        @media only screen and (max-width: 400px) {
+          font-size: 15px;
+        }
+      }
+    }
+    &.item-buttons_card-1, &.item-buttons_card-5 {
+      .btn_yellow {
+        &:after {
+          background-color: #f2f2f2;
+        }
+      }
+    }
+  }
+}
+
